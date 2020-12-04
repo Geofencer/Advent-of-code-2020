@@ -4,13 +4,10 @@ namespace AdventOfCode2020
 {
     class Coder
     {
-        private static readonly int Day = 3;
+        private static readonly int Day = 4;
 
         static void Main()
         {
-            Console.WriteLine("Welcome to advent of code 2020");
-            Console.WriteLine("Today is day: " + Day.ToString());
-
             switch (Day)
             {
                 case 1:
@@ -30,6 +27,12 @@ namespace AdventOfCode2020
                     Console.WriteLine(Day3.Part1());
                     Console.WriteLine("Day 3: part 2");
                     Console.WriteLine(Day3.Part2()); ;
+                    break;
+                case 4:
+                    Console.WriteLine("Day 4: part 1");
+                    Console.WriteLine(Day4.Part1());
+                    Console.WriteLine("Day 4: part 2");
+                    Console.WriteLine(Day4.Part2()); ;
                     break;
             }
         }

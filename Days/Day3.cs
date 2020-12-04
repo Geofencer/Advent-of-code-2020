@@ -1,5 +1,4 @@
-﻿using System;
-using System.Numerics;
+﻿using System.Numerics;
 
 namespace AdventOfCode2020
 {
@@ -11,7 +10,6 @@ namespace AdventOfCode2020
             return "Trees encountered: " + TreeCounter(3, 1);
         }
 
-
         internal static string Part2()
         {
             //Solve Puzzle
@@ -21,7 +19,6 @@ namespace AdventOfCode2020
             Trees = BigInteger.Multiply(Trees, TreeCounter(1, 2));
             return "Trees encountered: " + Trees;
         }
-
 
         private static int TreeCounter(int LonStep, int LatStep)
         {
@@ -35,7 +32,7 @@ namespace AdventOfCode2020
             {
                 var Lattitude = i * LatStep;
                 var HorizontalDistance = i * LonStep;
-                var Longitude = (int)(HorizontalDistance - (Math.Floor(new decimal(HorizontalDistance / PatternLength)) * PatternLength));
+                var Longitude = HorizontalDistance % PatternLength; //var Longitude = (int)(HorizontalDistance - (Math.Floor(new decimal(HorizontalDistance / PatternLength)) * PatternLength));
 
                 if (TreeLines[Lattitude][Longitude] == '#')
                 {
