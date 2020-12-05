@@ -4,7 +4,7 @@ namespace AdventOfCode2020
 {
     class Coder
     {
-        private static readonly int Day = 4;
+        private static readonly int Day = 5;
 
         static void Main()
         {
@@ -33,6 +33,12 @@ namespace AdventOfCode2020
                     Console.WriteLine(Day4.Part1());
                     Console.WriteLine("Day 4: part 2");
                     Console.WriteLine(Day4.Part2()); ;
+                    break;
+                case 5:
+                    Console.WriteLine("Day 5: part 1");
+                    Console.WriteLine(Day5.Part1());
+                    Console.WriteLine("Day 5: part 2");
+                    Console.WriteLine(Day5.Part2()); ;
                     break;
             }
         }

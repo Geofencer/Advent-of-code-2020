@@ -17,5 +17,18 @@ namespace AdventOfCode2020
                 throw new Exception("Failed reading input file: " + FileName, Exception);
             }
         }
+
+        internal static string ReadAsText(string FileName)
+        {
+            try
+            {
+                var InputFile = $"{AppDomain.CurrentDomain.BaseDirectory}/../../../input/{FileName}.txt";
+                return File.ReadAllText(InputFile);
+            }
+            catch (Exception Exception)
+            {
+                throw new Exception("Failed reading input file: " + FileName, Exception);
+            }
+        }
     }
 }
