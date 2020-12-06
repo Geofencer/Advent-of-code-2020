@@ -118,5 +118,4 @@ namespace AdventOfCode2020
             Coords = (0, 127, 0, 7);
         }
     }
-
 }
