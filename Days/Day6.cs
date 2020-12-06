@@ -5,7 +5,7 @@ namespace AdventOfCode2020
 {
     internal static class Day6
     {
-        internal static string Part1() // Onliner Roy-T style :p
+        internal static string Part1() //Onliner Roy-T style :p
         {
             var UniqueAnswers = Input.ReadAsText("Day6")
                 .Split(new string[] { Environment.NewLine + Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries)
